@@ -2,13 +2,13 @@ let taks = []
 let idCero = 1
 export class TaskModel {
 
-  static deleteOne(id) {
+   deleteOne(id) {
     const task = delete(id);
     task.pop(task)
     return task;
   }
 
-  static postOne() {
+   postOne() {
     let idMasUno =+ idCero
     const task =  post({
       id: idMasUno,
@@ -21,4 +21,7 @@ export class TaskModel {
     console.log(cosolaPrueba)
     return task
   }
+  
+  
+
 }
